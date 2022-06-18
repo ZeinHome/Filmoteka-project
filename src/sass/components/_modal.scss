@@ -1,0 +1,242 @@
+body.modal-open {
+    overflow: hidden;
+}
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( #000000, 0.25);
+    transition: opacity 200ms ease-in;
+    z-index: 25;
+}
+
+.backdrop--active {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+}
+
+.backdrop--active .modal {
+    transform: scale(0.9);
+}
+
+.modal {
+    overflow-y: auto;
+    width: 280px;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    visibility: visible;
+    opacity: 1;
+    border-radius: 25px 25px 25px 25px;
+  
+    background-color: var(--white-color);
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 250ms ease-in, visibility 250ms ease-in, transform 250ms ease-in;
+    box-shadow: var(--accent-color) 1px 1px 50px, var(--accent-color) 1px 1px 100px;
+    box-shadow: 0px 0px 80px 15px var(--accent-color);
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 704px;
+        height: auto;
+    }
+    @media screen and (min-width: 1024px) {
+        width: 814px;
+        height: auto;
+    }
+}
+
+// Анимация
+.slideDownIn {
+    animation-name: slideDownIn;
+    -webkit-animation-name: slideDownIn;
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+}
+
+@keyframes slideDownIn {
+        0% {
+            scale: 0;
+        }
+        100% {
+            scale: 1;
+        }
+}
+
+@-webkit-keyframes slideDownIn {
+         0% {
+             scale: 0;
+         }
+    
+         100% {
+             scale: 1;
+         }
+}
+
+
+// <-- --------------------- -->
+.modal__button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    outline: none;
+    background-color: var(--white-color);
+}
+
+.modal__img {
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+        height: 357px;
+    }
+}
+
+.film-content {
+    padding: 50px 20px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.info-box {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        margin-left: 68px;
+    }
+    @media screen and (min-width: 1024px) {
+        margin-left: 16px;
+    }
+}
+
+.film__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    @media screen and (min-width: 1024px) {
+        font-size: 30px;
+        line-height: 1.16;
+    }
+}
+
+.information {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.film__feature {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    @media screen and (min-width: 768px) and (max-width: 1023px) {}
+}
+
+.wrapper-feature {
+    margin-bottom: auto;
+}
+
+.film__item {
+    width: 107px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #8C8C8C;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
+    }
+}
+
+.film__text {
+    color: var(--black-color);
+}
+
+.rating {
+    background: var(--accent-color);
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 1px 10px;
+}
+
+.rating--grey {
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    padding: 1px 4px;
+}
+
+.about {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 264px;
+    }
+    @media screen and (min-width: 1024px) {
+        width: 391px;
+    }
+}
+
+.about__title {
+    line-height: 1.33;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.about__text {
+    line-height: 1.67;
+}
+
+.btn-box {
+    display: flex;
+}
+
+.btn-box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.33;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #F8F8F8;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: none;
+    height: 45px;
+    width: 113px;
+    @media screen and (min-width: 768px) {
+        width: 125px;
+    }
+}
+
+.btn-watched {
+    margin-right: 10px;
+    
+    @media screen and (min-width: 768px) {
+        margin-right: 15px;
+    }
+}
+
+.btn-qweqwe {
+    
+}
+
+button.pressed {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.transfer {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}

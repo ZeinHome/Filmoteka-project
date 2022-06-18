@@ -1,0 +1,74 @@
+<header class="header__container">
+  <div class="container fixed-thema">
+    <div class="header__wrap">
+      <div class="header__box">
+        <a href=".//index.html" class="header__link">
+          <svg class="header__svg" width="24" height="24">
+            <use
+              href=".//images/SVG-sprites/symbol-sprites.svg#icon-film"
+            ></use>
+          </svg>
+          <h2 class="title">Filmoteka</h2>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href=".//index.html" class="nav__home nav__current">home</a>
+          </li>
+          <li class="nav-item nav-item__lib">
+            <a href="/src/library.html" class="nav__library">my library</a>
+          </li>
+          <li class="nav-item nav-item__login">
+            <a class="login-btn" name="loginBtn" href="#">Login</a>
+          </li>
+          <li class="nav-item nav-item__reg">
+            <a class="reg-btn" name="regBtn" href="#">Registration</a>
+          </li>
+          <li class="nav-item nav-item__logout">
+            <a class="logout-btn" name="logoutBtn" href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <form class="form__search">
+      <input
+        id="search-query"
+        type="text"
+        name="search"
+        placeholder="Movie search"
+        class="search"
+        autocomplete="off"
+      />
+      <button type="submit" tabindex="-1">
+        <svg class="form__svg" width="12" height="12">
+          <use
+            href=".//images/SVG-sprites/symbol-sprites.svg#icon-search"
+          ></use>
+        </svg>
+      </button>
+    </form>
+    <p class="search__error">
+      Search result is not successful. Enter the correct movie name and push
+      search button
+    </p>
+    <div label__wrap>
+      <input type="checkbox" class="checkbox" id="checkbox" tabindex="-1" />
+      <label for="checkbox" class="label">
+        <span class="fas fa-moon">
+          <svg class="moon-svg" width="15" height="15">
+            <use
+              href=".//images/SVG-sprites/symbol-sprites.svg#icon-moon"
+            ></use>
+          </svg>
+        </span>
+        <span class="fas fa-sun">
+          <svg class="sun-svg" width="15" height="15">
+            <use href=".//images/SVG-sprites/symbol-sprites.svg#icon-sun"></use>
+          </svg>
+        </span>
+        <div class="ball"></div>
+      </label>
+    </div>
+  </div>
+</header>

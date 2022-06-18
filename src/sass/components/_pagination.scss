@@ -1,0 +1,30 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    @media screen and (min-width:768px) {
+            margin-bottom: 60px;
+        }
+}
+
+.pagination-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.25s ease-in;
+    border-radius: 5px;
+    
+}
+
+.pagination-arrow {
+background-color: #f7f7f7;
+}
+
+
+.current-page, .pagination-arrow:hover, .pagination-pages:hover {
+    background-color: #FF6B08;
+    color: #FFFFFF;
+}

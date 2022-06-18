@@ -1,0 +1,55 @@
+<header class="library-header">
+  <div class="container fixed-thema">
+    <div class="library-navigation">
+      <div class="header-logo">
+        <a href="/src/index.html" lang="en" class="logo">
+          <svg class="header__svg" width="24" height="24">
+            <use
+              href=".//images/SVG-sprites/symbol-sprites.svg#icon-film"
+            ></use>
+          </svg>
+          <span class="logo_text">Filmoteka</span></a
+        >
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item-lib">
+            <a href=".//index.html" class="nav__home">home</a>
+          </li>
+          <li class="nav-item-lib">
+            <a href="/src/library.html" class="nav__library nav__current"
+              >my library</a
+            >
+          </li>
+          <li class="nav-item-lib nav-item__logout">
+            <a class="nav__logout" name="logoutLibBtn" href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="library-check">
+      <button class="library-btn library-btn__isActive" data-action="watched">
+        WATCHED
+      </button>
+      <button class="library-btn" data-action="queue">QUEUE</button>
+    </div>
+    <div label__wrap>
+      <input type="checkbox" class="checkbox" id="checkbox" />
+      <label for="checkbox" class="label">
+        <span class="fas fa-moon">
+          <svg class="moon-svg" width="15" height="15">
+            <use
+              href=".//images/SVG-sprites/symbol-sprites.svg#icon-moon"
+            ></use>
+          </svg>
+        </span>
+        <span class="fas fa-sun">
+          <svg class="sun-svg" width="15" height="15">
+            <use href=".//images/SVG-sprites/symbol-sprites.svg#icon-sun"></use>
+          </svg>
+        </span>
+        <div class="ball"></div>
+      </label>
+    </div>
+  </div>
+</header>

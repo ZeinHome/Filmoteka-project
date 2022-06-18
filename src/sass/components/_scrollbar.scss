@@ -1,0 +1,16 @@
+body::-webkit-scrollbar {
+    width: 12px;
+    
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(247, 140, 58, 0.561);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7447238f;
+    /* цвет бегунка */
+    border-radius: 20px;
+    /* округлось бегунка */
+    /* отступ вокруг бегунка */
+}

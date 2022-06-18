@@ -1,0 +1,37 @@
+{
+  "name": "filmoteka-project",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://github.com/ZeinHome/Filmoteka-project/",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /Filmoteka-project/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZeinHome/Filmoteka-project.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "firebase": "^9.8.3",
+    "modern-normalize": "^1.1.0",
+    "nprogress": "^0.2.0",
+    "swiper": "^8.2.3",
+    "vanilla-back-to-top": "^7.2.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4",
+    "process": "^0.11.10"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
